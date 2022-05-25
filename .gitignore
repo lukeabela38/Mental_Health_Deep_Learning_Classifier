@@ -1,5 +1,8 @@
 /Development/development_files/__pycache__
-/Deployment/deployment_files/__pycache__
 /Development/development_files/Models
+/Development/development_files/Datasets
+
+/Deployment/deployment_files/__pycache__
 /Deployment/deployment_files/Models
 /Deployment/deployment_files/flagged
+
