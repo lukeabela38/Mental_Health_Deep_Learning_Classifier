@@ -28,3 +28,6 @@ This section includes the files necessary to train the mental health classifiers
 
 ### 2.Deployment
 This section includes the files used to deployment a Gradio based web demo and a terminal based demo using flask.
+
+### 3.Documentation
+This section includes deliverables including the Dissertation paper discussing the project, a reflective essay focusing more on ethics, and potential social impacts of such a project, and finally a power point presentation briefly discussing an overview of the project.
