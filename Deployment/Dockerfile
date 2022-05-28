@@ -17,5 +17,8 @@ RUN python3 -m pip install pandas
 RUN python3 -m pip install gradio
 RUN python3 -m pip install flask==2.0.3
 RUN python3 -m pip install waitress==2.0.0
-
 RUN apt update
+
+EXPOSE 8001
+
+CMD ["python3", "app.py"]
