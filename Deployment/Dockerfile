@@ -1,3 +1,4 @@
+
 FROM tensorflow/tensorflow:latest
 
 RUN apt-get -y update && apt-get install -y \
@@ -19,6 +20,13 @@ RUN python3 -m pip install flask==2.0.3
 RUN python3 -m pip install waitress==2.0.0
 RUN apt update
 
-EXPOSE 8001
+COPY . .
 
-CMD ["python3", "app.py"]
+WORKDIR /workspace
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.
+
+EXPOSE 8000
+EXPOSE 8080
+
+#CMD [flask, run]
