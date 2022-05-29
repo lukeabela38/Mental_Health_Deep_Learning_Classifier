@@ -1,0 +1,8 @@
+numpy
+tqdm
+nltk
+transformers
+waitress
+flask
+redis
+pandas

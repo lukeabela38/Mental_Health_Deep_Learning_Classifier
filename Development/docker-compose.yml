@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mentalHealthDockerDevelopment:
+    container_name: mentalHealthDockerDevelopment
+    image: mentalhealth_development
+    volumes:
+      - '$PWD/development_files:/workspace'
+    ports:
+      - '8888:8888'
+    command: bash
+    working_dir: /workspace
+    tty: true

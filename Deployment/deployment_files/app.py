@@ -28,7 +28,7 @@ curl http://localhost:8000/read -d "text=Hello, this is a test"
 
 @app.route('/')
 def hello():
-    return "Mental Health Classifier using Social Media Generated Data.\n"
+    return "Mental Health Classifier using Social Media Generated Data - Deployment.\n"
 
 
 if __name__ == "__main__":

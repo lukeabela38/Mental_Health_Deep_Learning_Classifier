@@ -6,21 +6,12 @@ from augmentation import dataAugmentation
 from processing import Preprocessing
 from transformer import Transformer
 
-def get_args():
-
-    parser = argparse.ArgumentParser(description="Mental Health Classifier Training")
-    parser.add_argument("--input", type=int, default=0, help="output device to use")
-
-    return parser.parse_args()
-
 def main():
-
-    args = get_args()
 
     ## TODO: Load Data and return partitioned data set
     data = Data(verbose=False)
     data._prepareDict()
-    labelled_data, label = data._prepareCorpus(N = args.input)
+    labelled_data, label = data._prepareCorpus(N = int(input("Input Integer: ")))
 
     print("")
     print("Beginning Training of classifier for: ", label)
